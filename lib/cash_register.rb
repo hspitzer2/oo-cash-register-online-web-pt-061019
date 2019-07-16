@@ -14,6 +14,8 @@ attr_accessor :total, :discount, :items
     self.toatl += transaction
     quantity.times do
       self.items << title
+    end
+    self.last_transaction = transaction
   end
 
   def apply_discount
