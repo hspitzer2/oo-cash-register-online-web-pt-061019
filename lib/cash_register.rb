@@ -7,7 +7,6 @@ attr_accessor :total, :discount, :items
     @items = []
     @discount = discount
     @last_transaction
-
   end
 
   def add_item(title, price, number = 1)
