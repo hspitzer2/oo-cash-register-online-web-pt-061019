@@ -24,6 +24,6 @@ attr_accessor :total, :discount, :items, :last_transaction
     "After the discount, the total comes to $#{@total.to_i}."
     else
     last_transaction
+    end
   end
- end
 end
