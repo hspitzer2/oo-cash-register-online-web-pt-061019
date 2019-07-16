@@ -21,8 +21,9 @@ attr_accessor :total, :discount, :items, :last_transactions
   def apply_discount
     if @discount != 0
       @total = total.to_f * (1- @discount.to_f/ 100.0)
-    "After the discount, the total comes to $#{@total.to_i}."
-    else
+    "After the discount, the total comes to $#{@total.to_i}."  
+  else
+      "There is no discount."
     last_transaction
     end
   end
