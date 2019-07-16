@@ -19,10 +19,5 @@ attr_accessor :total, :discount, :items
     @total = total.to_f * discount/100.0
     last_transaction
   end
-
-
-
-
-
-
+end
 end
