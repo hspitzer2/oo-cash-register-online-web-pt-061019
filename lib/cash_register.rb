@@ -10,9 +10,10 @@ attr_accessor :total, :discount, :items
   end
 
   def add_item(title, price, number = 1)
-    @total +=(price * quantity)
-    apply_discount
-    quantity.times do @items<< title
+    transaction = (price * quantity)
+    self.toatl += transaction
+    quantity.times do
+      self.items << title
   end
 
   def apply_discount
