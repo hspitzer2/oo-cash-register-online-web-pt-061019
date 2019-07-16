@@ -8,6 +8,9 @@ attr_accessor :total
 
   end
 
+  def total
+    
+  end
 
 
 
