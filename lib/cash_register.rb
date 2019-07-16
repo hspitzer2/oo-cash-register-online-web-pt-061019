@@ -26,4 +26,8 @@ attr_accessor :total, :discount, :items, :last_transactions
     last_transaction
     end
   end
+
+  def last_transaction
+    @total -= last_transaction
+  end
 end
