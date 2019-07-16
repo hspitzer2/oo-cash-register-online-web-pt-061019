@@ -15,7 +15,7 @@ attr_accessor :total, :discount, :items, :last_transactions
     number.times do
       self.items << title
     end
-    self.last_transactions = transaction
+    self.last_transaction = transaction
   end
 
   def apply_discount
