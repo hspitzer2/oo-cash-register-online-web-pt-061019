@@ -11,7 +11,7 @@ attr_accessor :total, :discount, :items
 
   def add_item(title, price, number = 1)
     transaction = price * quantity
-    self.toatl += transaction
+    self.total += transaction
     quantity.times do
       self.items << title
     end
@@ -19,7 +19,9 @@ attr_accessor :total, :discount, :items
   end
 
   def apply_discount
-    @total = total.to_f * discount/100.0
+    @total = total.to_f * (1- @discount.to_f/ 100.0)
+    "After the discount, the total comes to $#{@total.to_i}."
+    
     last_transaction
   end
  end
